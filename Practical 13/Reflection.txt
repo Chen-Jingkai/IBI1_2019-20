@@ -1,0 +1,3 @@
+The practical is hard and complex. I enjoy the mathematic calculation in the practical.
+Also, I got involved that how to select random people and express area infection in Python.
+The most important thing I learnt is the plot skills and plot to express infection in population.
