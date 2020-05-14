@@ -1,0 +1,3 @@
+Question: How have new cases and total cases developed over time in Spain?
+The codes are included in the Practical 7.py file
+As for plt.legend(). did not been written as plt.legend("spain_new_cases"), it because the complete legend would not been shown.
