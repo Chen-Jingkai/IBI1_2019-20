@@ -5,10 +5,10 @@ Created on Thu May 14 21:55:23 2020
 @author: 16977
 """
 
-import re
+import aa
 from fractions import Fraction
 
-re_numtest = re.compile(r'(^[1-9]$)|(^1[0-9]$)|(^2[0-3]$)')
+re_numtest = aa.compile(r'(^[1-9]$)|(^1[0-9]$)|(^2[0-3]$)')
 i = 1
 while i:
     i = 0
@@ -37,7 +37,6 @@ def exp(p,iter=0):
     ret = []
     p = permutations(p) if iter==0 else [p]
     for array_n in p:
-        #print(array_n)
         for num in range(1,len(array_n)):
             ret1 = exp(array_n[:num],iter+1)
             ret2 = exp(array_n[num:],iter+1)
@@ -57,7 +56,7 @@ print(exp(L))
 
 count = 0 
 
-def dfs(n):
+def cou(n):
     global count
     count = count +1
 
@@ -73,35 +72,35 @@ def dfs(n):
             num[j] = num[n-1]
             
             num[i] = a+b
-            if(dfs(n-1)):
+            if(cou(n-1)):
                 return 1
 
             num[i] = a-b
-            if(dfs(n-1)):
+            if(cou(n-1)):
                 return 1  
 
             num[i] = b-a
-            if(dfs(n-1)): 
+            if(cou(n-1)): 
                 return 1 
             
             num[i] = a*b
-            if(dfs(n-1)): 
+            if(cou(n-1)): 
                 return 1  
             
             if a:
                 num[i] = Fraction(b,a)
-                if(dfs(n-1)): 
+                if(cou(n-1)): 
                     return 1 
 
             if b:
                 num[i] = Fraction(a,b)
-                if(dfs(n-1)): 
+                if(cou(n-1)): 
                     return 1  
             num[i] = a
             num[j] = b
     return 0 
 
-if (dfs(len(num))): 
+if (cou(len(num))): 
     print('Yes')
 else: 
     print('No')
