@@ -1,0 +1,10 @@
+In practical classes, I put theory and mothed of Python into action. I firstly got involved with GitHub and GitKraken. 
+During the practicals, I studied how variables work within a piece of code. Also, I learned how to work with online 
+resourses and intergrated information. Additionally, some mathematic methods were learned for a better use of 
+Python. The most important thing I learned is plot skills and how to use plots to express and analyse data. 
+In the 24 points computing practical, I got trapped at first because it was complex and I did not form a clear and 
+coherent mind on how to do this step by step. Therefore, I made a discussion with my classmates to make a clear 
+train of thought. I was also confused when trying to show certain data rows and columns because I did not set the 
+boolean codes correctly. I asked my classmates and made corrections.
+Many practicals are complex and difficult to do. Thus, I could not do them all by myself and had to have a discussion
+with others. I learned Python using during these practicals and gradually developed a programming think model.
